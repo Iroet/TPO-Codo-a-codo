@@ -1,0 +1,283 @@
+ /* ESTILO GLOBAL DEL CONTENEDOR */
+.contenedor {
+    display: flex;
+    flex-flow:column;     
+}
+
+
+
+        
+ /*MENU VERTICAL DE PRODUCTOS Y CATEGORIAS-SUBCATEGORIAS */
+.menu-categoria-vertical a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    text-decoration: none;    
+    color: white;    
+    font-size: 20px;      
+    
+}
+
+.menu-categoria-vertical > li {
+
+    list-style: none; 
+    margin-top: 50px;
+}
+
+.menu-subcategoria-vertical > li {
+    
+    list-style: circle;
+    margin-left: 2em;
+    margin-top: 4px;   
+    
+}
+
+.menu-subcategoria-vertical li a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    display: flex;    
+    margin-right: 150px;    
+    font-size: 19px;    
+    color: white;
+    
+    
+}
+
+
+.menu-categoria-vertical {
+    
+    width: 46%;   
+    
+}
+
+
+
+.catego-h3 {   
+    margin-top: 10%;
+    border-radius: 33px;        
+    display:block;
+    font-size: 20px;      
+
+}
+
+
+ /* SECCIONES DE LA PAGINA PRODUCTOS */
+aside {   
+          
+    padding: 20px; 
+                
+}
+
+aside h1 {        
+    
+    font-size: 40px;    
+    color:rgb(0, 0, 0);
+}
+
+
+section {      
+    
+    flex: 70%;        
+    padding: 20px;     
+     
+}
+
+
+
+section li {
+
+    list-style: none; 
+    
+}
+
+section h1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+ /* ESTILOS DEL CONTENEDOR DE PRODUCTOS */
+
+
+
+.contenedor-productos h1 {
+    font-size: 50px;  
+    margin-top: 15px;      
+   
+}
+
+
+
+
+
+.contenedor-productos  p > img {
+    width: 300px;
+    height: 500px;    
+    box-shadow: 1px 5px 5px 5px rgb(1, 29, 39);
+    
+}
+
+
+
+/* BOTON INICIO ESTILO*/
+
+#boton-inicio {
+    background-color: rgb(30, 156, 210);
+    border-radius: 30px; 
+    position: sticky;   
+    text-align: center;     
+    width: 8%;
+    top: 0;     
+    margin-left: 90%;      
+    display: block;
+    padding: 5px;    
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+/*footer*/
+
+.pie-pagina2{
+    position:static;
+    background-color: rgb(0, 0, 0);    
+    bottom: 0%;
+    margin-top: 0;
+    width: 100%;
+    height: 5%;
+    padding: 10px 0 15px;
+    color: #fff;
+}
+
+.logo-pie3{
+    width: 60px;
+}
+
+.pie-pagina2{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.grupo3 h4{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Merriweather;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.grupo3 p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.grupo4{
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.grupo4 p{
+    font-size: 20px;
+    font-family: 'New Rocker', cursive;
+    word-spacing: 2px;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.redes1{
+    list-style: none;
+    display: flex;
+    align-items: inline;
+    justify-content: center;
+}
+.redes1 li{
+    margin: 0 15px;
+}
+
+.redes1 a{
+    text-decoration: none;
+    color: rgb(66, 204, 247);
+}
+
+.redes1 a i{
+    font-size: 20px;
+}
+
+
+
+
+/*BOTON AGREGAR CARRITO ESTILO*/
+
+
+
+#agregar-carrito {    
+    text-align: center; 
+    font-size: 15px; 
+    width: 15%;
+    padding: .4rem;   
+    border-radius: 33px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: cornflowerblue;
+}
+
+#agregar-carrito:hover {
+    background-color: aquamarine;
+}
+
+ /* ACCION AL ACHICAR LA PAGINA A 600px */
+@media (max-width: 1250px){
+    .contenedor {
+        display:inline-block;
+        
+    }  
+    aside {
+        border-bottom: .5em solid rgb(0, 0, 0);  
+    }
+    #inicio {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+ @media (max-width: 700px) {
+    .contenedor {
+        display:inline-block;
+        
+    }    
+    .contenedor-productos #agregar-carrito {
+        display:inline-block;
+        width: 50%;
+        
+    }
+    #inicio {
+        display: flex;
+        justify-content: center;
+    }
+    aside {
+        border-bottom: .5em solid rgb(0, 0, 0);  
+    }
+}
+
+
+
+/*Nuevos cambios*/
+
+.shop-items {    
+    
+    text-align: center;
+}
+
+.shop-item-details .shop-item-price  {
+    font-size: 30px;
+    text-align: center;
+    
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/login-registro.css">
+    <link rel="shortcut icon" href="../imgs/icono/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+    <a href="../index.html">
+        <button class="float" id="ca" >Volver al Inicio</button>
+    </a>
+
+    <main>
+
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja_trasera-login">
+                    <h3>¿Ya tienes cuenta?</h3>
+                    <p>Iniciar sesión con tu usuario</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                </div>
+
+                <div class="caja_trasera-register">
+                    <h3>¿Aun no tienes una cuenta?</h3>
+                    <p>Registrate para poder iniciar sesión</p>
+                    <button id="btn__registrarse">Registrarse</button>
+                </div>
+            </div>
+
+            <!--Formulario  -->
+
+            <div class="contenedor__login-register">
+
+            <!-- Log in -->
+
+                <form action="" class="formulario__login" id="form">
+                    <h2>Iniciar sesión</h2>
+
+                <div>
+                    <input type="email" name="" id="email" placeholder="Correo Electronico" >
+                    <span class="barra"></span>
+                </div>
+
+                <div>
+                    <input type="password" placeholder="Contraseña" id="password" >
+                    <span class="barra"></span>
+                </div>
+
+                    <button>Entrar</button>
+                    <p class="warnings" id="warnings"></p>
+                </form>
+
+            <!-- Registro -->
+                <form action="" class="formulario__register" id="form2">
+                    <h2>Registrarse</h2>
+                <div>
+                    <input type="text" placeholder="Nombre y Apellido" id="name" >
+                    <span class="barra"></span>
+                </div>
+                <div>
+                    <input type="email" placeholder="Correo Electronico" id="email2" >
+                    <span class="barra"></span>
+                </div>
+                <div>
+                    <input type="text" name="" id="username" placeholder="Usuario" >
+                    <span class="barra"></span>
+                </div>
+                <div>
+                    <input type="password" name="" id="password2" placeholder="Contraseña" >
+                    <span class="barra"></span>
+                </div>
+                    <button type="submit">Registrarse</button>
+                    <p class="warnings" id="warnings2"></p>
+                </form>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="../js/login-registro.js"></script>
+</body>
+</html>
